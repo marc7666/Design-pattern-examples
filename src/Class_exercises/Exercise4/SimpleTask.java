@@ -28,12 +28,12 @@ public class SimpleTask implements TaskManager {
         return duration;
     }
 
-    public String cost(){
+    public String cost() {
         String c = String.valueOf(this.cost.getCost());
         return c;
     }
 
-    public void printTask(){
+    public void printTask() {
         System.out.println("\t\t" + this.taskName + " costs: " + cost() + " and has a duration of: " + this.duration);
     }
 }

@@ -14,4 +14,9 @@ public class Money {
     public int getCost() {
         return cost;
     }
+
+    @Override
+    public String toString() {
+        return "" + cost;
+    }
 }

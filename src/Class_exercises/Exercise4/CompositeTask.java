@@ -32,14 +32,12 @@ public class CompositeTask implements TaskManager {
 
     @Override
     public Money costInEuros() {
-        int cost = 0;
-        Money aux = new Money(0);
+        int costInt = 0;
         for (SimpleTask t : controls) {
-            aux = t.costInEuros();
-            cost += aux.getCost();
+            costInt += t.costInEuros().getCost();
         }
-        this.cost = (Money) aux;
-        return this.cost;
+        Money m = new Money(costInt);
+        return m;
     }
 
     @Override
@@ -52,7 +50,7 @@ public class CompositeTask implements TaskManager {
 
 
     public void printTasks() {
-        System.out.println("\t" + this.taskName + " costs: " + String.valueOf(this.cost.getCost()) + " and has a duration of: " + this.duration);
+        costInEuros();
         for (SimpleTask st : controls) {
             st.printTask();
         }

@@ -6,5 +6,6 @@ package Class_exercises.Exercise4;
  */
 public interface TaskManager {
     Money costInEuros();
+
     int durationInDays();
 }
