@@ -9,6 +9,7 @@ import java.util.List;
  */
 public class CompositeTask implements TaskManager {
 
+
     private int taskCount = 0;
     private String taskName;
     private Money cost;

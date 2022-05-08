@@ -5,6 +5,8 @@ package Class_exercises.Exercise4;
  * @author: mcr99 on 08/05/2022.
  */
 public class SimpleTask implements TaskManager {
+    public static final String ANSI_GREEN = "\u001B[32m";
+
 
     private int taskCount = 0;
     private String taskName;
@@ -34,6 +36,6 @@ public class SimpleTask implements TaskManager {
     }
 
     public void printTask() {
-        System.out.println("\t\t" + this.taskName + " costs: " + cost() + " and has a duration of: " + this.duration);
+        System.out.println(ANSI_GREEN + "\t\t" + this.taskName + " costs: " + cost() + " and has a duration of: " + this.duration);
     }
 }
