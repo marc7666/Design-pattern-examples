@@ -1,4 +1,4 @@
-package Class_exercises.Exercise4;
+package Class_exercises.Exercise_4_Simlpe_Version;
 
 /**
  * @project: Design-pattern-examples.

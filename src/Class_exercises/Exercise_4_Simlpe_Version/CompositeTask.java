@@ -1,4 +1,4 @@
-package Class_exercises.Exercise4;
+package Class_exercises.Exercise_4_Simlpe_Version;
 
 import java.util.ArrayList;
 import java.util.List;
