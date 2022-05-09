@@ -1,18 +1,18 @@
-package AdapterPattern;
+package Examples.AdapterPattern;
 
 /**
  * @project: Software-engineering-II-exercises.
  * @author: mcr99 on 08/05/2022.
  */
-public class Lamp implements Connectable {
+public class Computer implements Connectable {
 
     /**
-     * Lamp that uses a european plug
+     * Computer that uses a european plug
      */
 
     private boolean isOn;
 
-    public Lamp() {
+    public Computer() {
         this.isOn = false;
     }
 
