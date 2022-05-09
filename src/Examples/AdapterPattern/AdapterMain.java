@@ -1,4 +1,4 @@
-package AdapterPattern;
+package Examples.AdapterPattern;
 
 /**
  * @project: Software-engineering-II-exercises.

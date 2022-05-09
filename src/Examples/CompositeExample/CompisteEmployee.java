@@ -1,7 +1,5 @@
-package CompositeExample;
+package Examples.CompositeExample;
 
-import java.awt.*;
-import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
 
