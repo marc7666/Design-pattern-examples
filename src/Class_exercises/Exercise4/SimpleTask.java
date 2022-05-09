@@ -6,9 +6,6 @@ package Class_exercises.Exercise4;
  */
 public class SimpleTask implements TaskManager {
     public static final String ANSI_GREEN = "\u001B[32m";
-
-
-    private int taskCount = 0;
     private String taskName;
     private Money cost;
 

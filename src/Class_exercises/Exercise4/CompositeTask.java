@@ -8,9 +8,6 @@ import java.util.List;
  * @author: mcr99 on 09/05/2022.
  */
 public class CompositeTask implements TaskManager {
-
-
-    private int taskCount = 0;
     private String taskName;
     private Money cost;
     private List<SimpleTask> controls;
