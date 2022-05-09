@@ -54,7 +54,7 @@ public class CompositeTask implements TaskManager {
         }
     }
 
-    public String getTaskName() {
+    public String getTaskName(){
         return taskName;
     }
 }

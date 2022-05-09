@@ -33,6 +33,6 @@ public class SimpleTask implements TaskManager {
     }
 
     public void printTask() {
-        System.out.println(ANSI_GREEN + "\t\t" + this.taskName + " costs: " + cost() + " and has a duration of: " + this.duration);
+        System.out.println(ANSI_GREEN + "\t\t " + this.taskName + " costs: " + cost() + " and has a duration of: " + this.duration);
     }
 }
