@@ -1,4 +1,4 @@
-package Examples.CompositeExample;
+package Examples.CompositePattern;
 
 import java.util.ArrayList;
 import java.util.List;

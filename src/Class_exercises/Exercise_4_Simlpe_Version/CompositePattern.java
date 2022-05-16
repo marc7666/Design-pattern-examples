@@ -22,6 +22,17 @@ public class CompositePattern {
         CompositeTask ct1 = new CompositeTask("Build a car");
         CompositeTask ct2 = new CompositeTask("Cook a receipt");
 
+        /*---------------*/
+        CompositeTask ct3 = new CompositeTask("Repair a car");
+        CompositeTask ct3_1 = new CompositeTask("Diagnose the problem");
+        SimpleTask st3_1_1 = new SimpleTask("Let the diagnose machine do the work", new Money(2000), 3);
+        SimpleTask st3_1_2 = new SimpleTask("Repeair the failure", new Money(4000), 8);
+        ct3_1.addTask(st3_1_1);
+        ct3_1.addTask(st3_1_2);
+        ct3.addTask(ct3_1);
+        /*---------------*/
+
+
         ct1.addTask(st1);
         ct1.addTask(st2);
 
@@ -36,6 +47,11 @@ public class CompositePattern {
 
         System.out.println(ANSI_CYAN + "The task " + ct2.getTaskName() + " has a cost of: " + ct2.costInEuros() + " and is: " + ct2.durationInDays() + " days long");
         ct2.printTasks();
+
+        System.out.println("\n");
+
+        System.out.println(ANSI_CYAN + "The task " + ct3.getTaskName() + " has a cost of: " + ct3.costInEuros() + " and is: " + ct3.durationInDays() + " days long");
+        ct3.printTasks();
 
     }
 }

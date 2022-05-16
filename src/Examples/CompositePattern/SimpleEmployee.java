@@ -1,4 +1,4 @@
-package Examples.CompositeExample;
+package Examples.CompositePattern;
 
 /**
  * @project: Software-engineering-II-exercises.
