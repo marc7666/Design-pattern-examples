@@ -7,7 +7,7 @@ import java.io.BufferedReader;
  * @author: mcr99 on 31/05/2022.
  */
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         var multi = new CompositeSequenceProcessor<String>();
         var counter = new Counter();
         var mean = new MeanLenght();
