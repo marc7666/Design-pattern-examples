@@ -13,8 +13,8 @@ public class Main {
         var mean = new MeanLenght();
         multi.addComponent(counter);
         multi.addComponent(mean);
-        var lines = new LinesIterator(new BufferedReader(/* Parameters */));
-        multi.processSequence(lines);
+        //var lines = new LinesIterator(new BufferedReader(/* Parameters */));
+        //multi.processSequence(lines);
         System.out.println(counter.getElements() + " is the counter");
         System.out.println(mean.getMeanLenght() + " is the mean lenght");
     }
