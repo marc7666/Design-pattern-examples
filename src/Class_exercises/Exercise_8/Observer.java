@@ -8,4 +8,10 @@ public interface Observer {
     void update(String taskName); //Observer behaviour for a simple task
 
     void update2(CompositeTask ct); //Observer behaviour for a composite task
+
+    /**
+     *
+     * public void update2(String taskName, List<Observer> observers);
+     */
+
 }
