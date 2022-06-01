@@ -78,7 +78,19 @@ public class NutritionFacts {
         return carbohydrate;
     }
 
-    public static NutritionFactsBuilder builder(){
+    public static NutritionFactsBuilder builder() {
         return new NutritionFactsBuilder();
+    }
+
+    @Override
+    public String toString() {
+        return "NutritionFacts { " +
+                "servingSize = " + servingSize +
+                ", servings = " + servings +
+                ", calories = " + calories +
+                ", fat = " + fat +
+                ", sodium = " + sodium +
+                ", carbohydrate = " + carbohydrate +
+                " }";
     }
 }

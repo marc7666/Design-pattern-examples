@@ -1,5 +1,7 @@
 package Class_exercises.Exercise_11;
 
+import Class_exercises.Exercise_11.Exceptions.ConditionsNotAchieved;
+
 public interface Builder {
     NutritionFactsBuilder servingSize(int num);
 
@@ -13,5 +15,5 @@ public interface Builder {
 
     NutritionFactsBuilder carbohydrate(int num);
 
-    NutritionFacts build();
+    NutritionFacts build() throws ConditionsNotAchieved;
 }
