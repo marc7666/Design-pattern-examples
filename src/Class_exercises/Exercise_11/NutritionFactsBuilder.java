@@ -1,6 +1,6 @@
 package Class_exercises.Exercise_11;
 
-import Class_exercises.Exercise_11.Exceptions.ConditionsNotAchievedException;
+import Class_exercises.Exercise_11.Exceptions.ConditionsNotAchieved;
 
 public class NutritionFactsBuilder implements Builder {
     private Integer servingSize = null;//    (ml) required
@@ -47,7 +47,7 @@ public class NutritionFactsBuilder implements Builder {
     }
 
     @Override
-    public NutritionFacts build() throws ConditionsNotAchievedException {
+    public NutritionFacts build() throws ConditionsNotAchieved {
         checkConditions();
         if (this.calories == null && this.fat == null && this.sodium == null && this.carbohydrate == null) {
             return new NutritionFacts(this.servingSize, this.servings);
@@ -62,11 +62,11 @@ public class NutritionFactsBuilder implements Builder {
         }
     }
 
-    public void checkConditions() throws ConditionsNotAchievedException {
+    public void checkConditions() throws ConditionsNotAchieved {
         if (this.servingSize == null) {
-            throw new ConditionsNotAchievedException("No serving size");
+            throw new ConditionsNotAchieved("No serving size");
         } else if (this.servings == null) {
-            throw new ConditionsNotAchievedException("No servings");
+            throw new ConditionsNotAchieved("No servings");
         }
     }
 }

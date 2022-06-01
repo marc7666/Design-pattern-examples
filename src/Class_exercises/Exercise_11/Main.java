@@ -1,13 +1,13 @@
 package Class_exercises.Exercise_11;
 
-import Class_exercises.Exercise_11.Exceptions.ConditionsNotAchievedException;
+import Class_exercises.Exercise_11.Exceptions.ConditionsNotAchieved;
 
 /**
  * @project: Design-pattern-examples.
  * @author: mcr99 on 02/06/2022.
  */
 public class Main {
-    public static void main(String[] args) throws ConditionsNotAchievedException {
+    public static void main(String[] args) throws ConditionsNotAchieved {
         NutritionFacts n1 = NutritionFacts.builder().servingSize(12).servings(22).build();
         System.out.println(n1.toString());
         NutritionFacts n2 = NutritionFacts.builder().servingSize(12).servings(22).calories(1300).build();
