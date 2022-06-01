@@ -1,6 +1,6 @@
 package Class_exercises.Segon_parcial_19_20;
 
-import Class_exercises.Segon_parcial_19_20.Exceptions.ConditionsNotAchieved;
+import Class_exercises.Segon_parcial_19_20.Exceptions.ConditionsERROR;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +42,7 @@ public class EmailBuilder {
         return this;
     }
 
-    public Email make() throws ConditionsNotAchieved {
+    public Email make() throws ConditionsERROR {
         checkConditions();
         if (this.ccTo.isEmpty()) {
             return new Email(this.from, this.tos, this.subject, this.body);
@@ -51,15 +51,15 @@ public class EmailBuilder {
         }
     }
 
-    private void checkConditions() throws ConditionsNotAchieved {
+    private void checkConditions() throws ConditionsERROR {
         if (from == null){
-            throw new ConditionsNotAchieved("No from");
+            throw new ConditionsERROR("No from");
         } else if (subject == null) {
-            throw new ConditionsNotAchieved("No subject");
+            throw new ConditionsERROR("No subject");
         } else if (body == null) {
-            throw new ConditionsNotAchieved("No body");
+            throw new ConditionsERROR("No body");
         } else if (tos == null) {
-            throw new ConditionsNotAchieved("No to");
+            throw new ConditionsERROR("No to");
         }
     }
 }
