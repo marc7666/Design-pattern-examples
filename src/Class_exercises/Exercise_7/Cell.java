@@ -32,7 +32,7 @@ public class Cell {
         }
     }
 
-    public Cell updateValues() {
+    public Cell updateOtherCellsValues() {
         Cell newCell = new Cell(this.possibleValues);
         newCell.setValues(this.getValues());
         return newCell;
