@@ -10,14 +10,14 @@ import java.util.Arrays;
 public class ColorRectangle extends Rectangle {
     private Color c;
 
-    public ColorRectangle(float width, float height, Color c) {
-        super(width, height);
+    public ColorRectangle(float x, float y, float width, float height, Color c) {
+        super(x, y, width, height);
         this.c = c;
     }
 
     @Override
     public Figure copy() {
-        return new ColorRectangle(getWidth(), getHeight(), this.c);
+        return new ColorRectangle(getX(), getY(), getWidth(), getHeight(), this.c);
     }
 
     @Override
@@ -31,7 +31,7 @@ public class ColorRectangle extends Rectangle {
         int red = c.getRed();
         int green = c.getGreen();
         int blue = c.getBlue();
-        if (red == 255 && green == 255 && blue == 255){
+        if (red == 255 && green == 255 && blue == 255) {
             return "White";
         } else if (red == 192 && green == 192 && blue == 192) {
             return "Light gray";
@@ -55,7 +55,7 @@ public class ColorRectangle extends Rectangle {
             return "Magenta";
         } else if (red == 0 && green == 255 && blue == 255) {
             return "Cyan";
-        } else{
+        } else {
             return "Blue";
         }
     }

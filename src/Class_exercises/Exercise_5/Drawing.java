@@ -10,13 +10,14 @@ import java.util.List;
 public class Drawing extends Figure {
     private List<Figure> subfigures;
 
-    public Drawing() {
+    public Drawing(float x, float y) {
+        super(x, y);
         this.subfigures = new ArrayList<>();
     }
 
     @Override
     public Figure copy() {
-        Drawing newDrawing = new Drawing();
+        Drawing newDrawing = new Drawing(getX(), getY());
         newDrawing.subfigures = this.subfigures;
         return newDrawing;
     }

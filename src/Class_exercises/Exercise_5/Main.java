@@ -8,17 +8,17 @@ import java.util.List;
  * @author: mcr99 on 30/05/2022.
  */
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("---------- Exercise 5 ----------");
 
         /* New drawing */
-        Drawing draw = new Drawing();
+        Drawing draw = new Drawing(0f, 0f);
 
         /* Drawing figures */
-        Circle c1 = new Circle(12.3f);
-        Rectangle r1 = new Rectangle(2.5f, 3.6f);
-        Line l1 = new Line(12f, 7.2f);
-        ColorRectangle cR1= new ColorRectangle(45.2f, 66f, Color.BLUE);
+        Circle c1 = new Circle(12.3f, 0f, 0f);
+        Rectangle r1 = new Rectangle(0f, 0f, 2.5f, 3.6f);
+        Line l1 = new Line(0f, 0f, 12f, 7.2f);
+        ColorRectangle cR1 = new ColorRectangle(0f, 0f, 45.2f, 66f, Color.BLUE);
 
         /* Adding the figures to draw */
         draw.addSubfigure(c1);

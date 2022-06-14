@@ -7,13 +7,14 @@ package Class_exercises.Exercise_5;
 public class Circle extends Figure {
     private float r;
 
-    public Circle(float r) {
+    public Circle(float r, float x, float y) {
+        super(x, y);
         this.r = r;
     }
 
     @Override
     public Figure copy() {
-        return new Circle(this.r);
+        return new Circle(this.r, getX(), getY());
     }
 
     @Override

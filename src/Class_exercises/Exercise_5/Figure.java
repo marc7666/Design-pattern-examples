@@ -8,9 +8,17 @@ public abstract class Figure {
     private float x;
     private float y;
 
-    public Figure() {
-        this.x = 0f;
-        this.y = 0f;
+    public Figure(float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public float getX() {
+        return x;
+    }
+
+    public float getY() {
+        return y;
     }
 
     public abstract Figure copy();
